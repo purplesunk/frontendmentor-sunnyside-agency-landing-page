@@ -1,0 +1,123 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary-red: hsl(7, 99%, 70%);
+  --clr-primary-yellow: hsl(51, 100%, 49%);
+  --clr-primary-ds-cyan: hsl(167, 40%, 24%);
+  --clr-primary-blue: hsl(198, 62%, 26%);
+  --clr-primary-m-cyan: hsl(168, 34%, 41%);
+
+  --clr-neutral-900: hsl(212, 27%, 19%);
+  --clr-neutral-600: hsl(213, 9%, 39%);
+  --clr-neutral-400: hsl(232, 10%, 55%);
+  --clr-neutral-300: hsl(210, 4%, 67%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --fn-size: 1.125rem;
+  --fn-body: 'Barlow', sans-serif;
+  --fn-heading: 'Fraunces', serif;
+}
+
+body {
+  margin: 0;
+  font-size: var(--fn-size);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER */
+.intro {
+  background-image: url(../images/mobile/image-header.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-color: #3DBEFF;
+  padding: 2rem 1rem;
+}
+
+.intro--title {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--clr-neutral-100);
+  font-family: var(--fn-heading);
+  font-weight: 900;
+  letter-spacing: 0.3125rem;
+}
+
+.intro--arrow {
+  display: block;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 7rem;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.navbar--btn {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar--link-list {
+  background-color: white;
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  width: min(100%, 21.09375rem);
+  padding: 2.125rem;
+  text-align: center;
+  font-family: var(--fn-body);
+}
+
+.navbar--link-list::before {
+  content: '';
+  border-right: 1.5rem solid white;
+  border-left: 1.5rem solid transparent;
+  border-top: 1.5rem solid transparent;
+  position: absolute;
+  right: 0;
+  top: -1.5rem;
+}
+
+.navbar--link-list > li + li {
+  margin-top: 1.75rem;
+}
+
+.navbar--link-list > li:last-child {
+  background-color: var(--clr-primary-yellow);
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  width: min-content;
+  margin-inline: auto;
+  font-family: var(--fn-heading);
+  text-transform: uppercase;
+}
+.navbar--link-list > li:last-child a {
+  color: var(--clr-neutral-900);
+}
+
+.navbar--link {
+  text-decoration: none;
+  color: var(--clr-neutral-400);
+  font-size: 1.225rem;
+}
+
+
+/* INFO */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
