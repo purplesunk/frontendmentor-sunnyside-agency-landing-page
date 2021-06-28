@@ -18,7 +18,7 @@
   <body>
     <header class="intro">
       <nav class="navbar">
-        <img src="images/logo.svg" alt="sunnyside logo">
+        <img class="navbar--logo" src="images/logo.svg" alt="sunnyside logo">
         <button data-button-target="#navbar-menu" class="navbar--btn"><img src="images/icon-hamburger.svg" alt="hamburger menu"></button>
         <ul id="navbar-menu" class="navbar--link-list">
           <li>
@@ -40,15 +40,8 @@
     </header>
   
     <section class="info">
-      <picture class="first-picture">
-        <source
-          media="(max-width: 700px)"
-          srcset="images/mobile/image-transform.jpg"/>
-        <source
-          media="(min-width: 701px)"
-          srcset="images/desktop/image-transform.jpg"/>
-        <img src="images/mobile/image-transform.jpg"/>
-      </picture>
+        <img class="desktop first-picture" src="images/desktop/image-transform.jpg"/>
+        <img class="mobile" src="images/mobile/image-transform.jpg"/>
         <div class="info--text first">
           <h2>Transform your brand</h2>
           <p>
@@ -57,16 +50,8 @@
           </p> 
           <a href="">Learn more</a>
         </div>
-        
-      <picture class="second-picture">
-        <source
-          media="(max-width: 700px)"
-          srcset="images/mobile/image-stand-out.jpg"/>
-        <source
-          media="(min-width: 701px)"
-          srcset="images/desktop/image-stand-out.jpg"/>
-        <img src="images/mobile/image-stand-out.jpg"/>
-      </picture>
+        <img class="desktop second-picture"src="images/desktop/image-stand-out.jpg"/>
+        <img class="mobile" src="images/mobile/image-stand-out.jpg"/>
         <div class="info--text second">
           <h2>Stand out to the right audience</h2>
           <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
@@ -108,48 +93,20 @@
     </section> 
 
     <section class="image-gallery"> 
-      <picture>
-        <source
-          media="(max-width: 700px)"
-          srcset="images/mobile/image-gallery-milkbottles.jpg"/>
-        <source
-          media="(min-width: 701px)"
-          srcset="images/desktop/image-gallery-milkbottles.jpg"/>
-        <img src="images/mobile/image-gallery-milkbottles.jpg"/>
-      </picture>
-      <picture>
-        <source
-          media="(max-width: 700px)"
-          srcset="images/mobile/image-gallery-orange.jpg"/>
-        <source
-          media="(min-width: 701px)"
-          srcset="images/desktop/image-gallery-orange.jpg"/>
-        <img src="images/mobile/image-gallery-orange.jpg"/>
-      </picture>
-      <picture>
-        <source
-          media="(max-width: 700px)"
-          srcset="images/mobile/image-gallery-cone.jpg"/>
-        <source
-          media="(min-width: 701px)"
-          srcset="images/desktop/image-gallery-cone.jpg"/>
-        <img src="images/mobile/image-gallery-cone.jpg"/>
-      </picture>
-      <picture>
-        <source
-          media="(max-width: 700px)"
-          srcset="images/mobile/image-gallery-sugar-cubes.jpg"/>
-        <source
-          media="(min-width: 701px)"
-          srcset="images/desktop/image-gallery-sugarcubes.jpg"/>
-        <img src="images/mobile/image-gallery-sugar-cubes.jpg"/>
-      </picture>
+        <img class="mobile" src="images/mobile/image-gallery-milkbottles.jpg"/>
+        <img class="mobile" src="images/mobile/image-gallery-orange.jpg"/>
+        <img class="mobile" src="images/mobile/image-gallery-cone.jpg"/>
+        <img class="mobile" src="images/mobile/image-gallery-sugar-cubes.jpg"/>
+        <img class="desktop" src="images/desktop/image-gallery-milkbottles.jpg"/>
+        <img class="desktop" src="images/desktop/image-gallery-orange.jpg"/>
+        <img class="desktop" src="images/desktop/image-gallery-cone.jpg"/>
+        <img class="desktop" src="images/desktop/image-gallery-sugarcubes.jpg"/>
     </section>
 
-   <footer>
-       <img src="images/logo.svg" alt="sunnyside logo">
+   <footer class="footer">
+         <img class="footer--logo" src="images/logo.svg" alt="sunnyside logo">
        <nav>
-          <ul>
+          <ul class="footer--link-list">
             <li>
               <a class="footer--links" href="">About</a>
             </li>
@@ -161,10 +118,26 @@
             </li>
           </ul>
           <ul class="contact">
-            <a href=""><img src="images/icon-facebook.svg" alt="facebook"></a>
-            <a href=""><img src="images/icon-instagram.svg" alt="instagram"></a>
-            <a href=""><img src="images/icon-twitter.svg" alt="twitter"></a>
-            <a href=""><img src="images/icon-pinterest.svg" alt="pinterest"></a>
+            <li>
+              <a class="socials" href="">
+                  <img src="images/icon-facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li>
+              <a class="socials" href="">
+                  <img src="images/icon-instagram.svg" alt="instagram">
+              </a>
+            </li>
+            <li>
+              <a class="socials" href="">
+                  <img src="images/icon-twitter.svg" alt="twitter">
+              </a>
+            </li>
+            <li>
+              <a class="socials" href="">
+                  <img src="images/icon-pinterest.svg" alt="pinterest">
+              </a>
+            </li>
           </ul>
        </nav>
        <div class="attribution">
