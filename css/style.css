@@ -95,7 +95,6 @@ ul {
   transform: scale(0.5, 0);
   transform-origin: top right;
   transition: transform 0.4s, opacity 0.3s;
-  visibility: hidden;
 }
 
 .navbar--link-list::before {
@@ -111,7 +110,6 @@ ul {
 .navbar--link-list.active {
   transform: scale(1);
   opacity: 1;
-  visibility: visible;
 }
 
 .navbar--link-list > li + li {
